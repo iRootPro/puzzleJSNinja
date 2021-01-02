@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d62d435-c9ff-4f52-ba28-86272cc8db91" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1mODABuhPADuNiGVFxfU76JjMpm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/puzzle/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d62d435-c9ff-4f52-ba28-86272cc8db91" name="Default Changelist" comment="" />
+      <created>1609355597473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609355597473</updated>
+      <workItem from="1609355598602" duration="12696000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2203" height="339" key="GridCell.Tab.0.bottom" timestamp="1609612682398">
+      <screen x="0" y="25" width="5120" height="1415" />
+    </state>
+    <state width="2203" height="339" key="GridCell.Tab.0.bottom/0.25.5120.1415@0.25.5120.1415" timestamp="1609612682398" />
+    <state width="2203" height="339" key="GridCell.Tab.0.center" timestamp="1609612682397">
+      <screen x="0" y="25" width="5120" height="1415" />
+    </state>
+    <state width="2203" height="339" key="GridCell.Tab.0.center/0.25.5120.1415@0.25.5120.1415" timestamp="1609612682397" />
+    <state width="2203" height="339" key="GridCell.Tab.0.left" timestamp="1609612682397">
+      <screen x="0" y="25" width="5120" height="1415" />
+    </state>
+    <state width="2203" height="339" key="GridCell.Tab.0.left/0.25.5120.1415@0.25.5120.1415" timestamp="1609612682397" />
+    <state width="2203" height="339" key="GridCell.Tab.0.right" timestamp="1609612682398">
+      <screen x="0" y="25" width="5120" height="1415" />
+    </state>
+    <state width="2203" height="339" key="GridCell.Tab.0.right/0.25.5120.1415@0.25.5120.1415" timestamp="1609612682398" />
+    <state x="2460" y="309" key="run.anything.popup" timestamp="1609609607494">
+      <screen x="0" y="25" width="5120" height="1415" />
+    </state>
+    <state x="2460" y="309" key="run.anything.popup/0.25.5120.1415@0.25.5120.1415" timestamp="1609609607494" />
+  </component>
+</project>
