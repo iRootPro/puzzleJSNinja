@@ -15,41 +15,48 @@ function solvePuzzle(pieces) {
             }
         }
     }
-    for (let k = 1; k < 10; k++) {
-        for (let i = 1; i < 100; i++) {
-            if (pieces[i].edges.left && pieces[i].edges.left.edgeTypeId === result[result.length - 1].edges.right.edgeTypeId) {
-                result.push(pieces[i]);
-                break
-            } else {
-                let rotatedPuzzle = rotatePuzzle(pieces[i])
-                if (rotatedPuzzle.edges.left && rotatedPuzzle.edges.left.edgeTypeId === result[result.length - 1].edges.right.edgeTypeId) {
-                    result.push(rotatedPuzzle);
-                    break
-                } else {
-                    rotatedPuzzle = rotatePuzzle(rotatedPuzzle)
-                    if (rotatedPuzzle.edges.left && rotatedPuzzle.edges.left.edgeTypeId === result[result.length - 1].edges.right.edgeTypeId) {
-                        result.push(rotatedPuzzle);
+
+
+    for (let line = 0; line < 10; line++) {
+        for (let puzzle = 0; puzzle < 9; puzzle++) {
+            let isBreak = false
+            console.log('новая пробежка')
+            for (let i = 1; i < pieces.length; i++) {
+                let newPuzzle = pieces[i]
+                for (let j = 0; j < 4; j++) {
+                    newPuzzle = rotatePuzzle(newPuzzle)
+                    if (newPuzzle.edges.left && (newPuzzle.edges.left.edgeTypeId === result[result.length - 1].edges.right.edgeTypeId)) {
+                        result.push(newPuzzle)
+                        isBreak = true
+                        pieces = pieces.filter(piece => piece.id !== newPuzzle.id)
+                        console.log('нашел')
                         break
-                    } else {
-                        rotatedPuzzle = rotatePuzzle(rotatedPuzzle)
-                        if (rotatedPuzzle.edges.left && rotatedPuzzle.edges.left.edgeTypeId === result[result.length - 1].edges.right.edgeTypeId) {
-                            result.push(rotatedPuzzle);
-                            break
-                        }
                     }
                 }
+                if (isBreak) break
             }
-            if (!result[result.length - 1].edges.right) {
-                break
+        }
+        for (let i = 1; i < pieces.length; i++) {
+            let isBreak = false
+            let newPuzzle = pieces[i]
+            for (let j=0; j<4; j++) {
+                newPuzzle = rotatePuzzle(newPuzzle)
+                if (newPuzzle.edges.top && (newPuzzle.edges.top.edgeTypeId === result[result.length-10].edges.bottom.edgeTypeId)) {
+                    result.push(newPuzzle)
+                    pieces = pieces.filter(piece => piece.id !== newPuzzle.id)
+                    isBreak = true
+                    break
+                }
             }
+            if (isBreak) break
         }
     }
 
 
     console.log('result', result)
-
     return result.map(puzzle => puzzle.id)
 }
+
 
 function rotatePuzzle(piece) {
     let newPiece = {
